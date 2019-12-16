@@ -56,6 +56,15 @@
     </el-table-column>
   </el-table>
 
+  <div class="pagination">
+    <div class="text">显示1到7，共23条</div>
+    <el-pagination
+        background
+        layout="prev, pager, next"
+        :total="23">
+    </el-pagination>
+  </div>
+
   </div>
 </template>
 
@@ -86,12 +95,6 @@ export default {
           user: "201511012",
           gender: "女",
         }, {
-          date: '硕士',
-          name: '小张',
-          address: '上海市普陀区金沙江路 1516 弄',
-          user: "201511011",
-          gender: "男",
-        }, {
           date: '本科',
           name: '小张',
           address: '上海市普陀区金沙江路 1516 弄',
@@ -115,13 +118,7 @@ export default {
           address: '上海市普陀区金沙江路 1516 弄',
           user: "201511011",
           gender: "男",
-        }, {
-          date: '专科',
-          name: '小张',
-          address: '上海市普陀区金沙江路 1516 弄',
-          user: "201511011",
-          gender: "男",
-        },
+        }, 
         
         
         ]
@@ -145,5 +142,16 @@ export default {
         position: absolute;
         top: 150px;
         left: 500px;
+    }
+     .pagination {
+      width: 950px;
+      height: 60px;
+      /* border: 1px solid red; */
+      margin: 20px auto;
+    }
+    .text {
+      font-size: 12px;
+      margin-top: 5px;
+      float: left;
     }
 </style>

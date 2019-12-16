@@ -65,6 +65,15 @@
     </el-table-column>
   </el-table>
 
+  <div class="pagination">
+    <div class="text">显示1到7，共16条</div>
+    <el-pagination
+        background
+        layout="prev, pager, next"
+        :total="16">
+    </el-pagination>
+  </div>
+
   </div>
 </template>
 
@@ -148,5 +157,16 @@ export default {
         top: 150px;
         left: 600px;
         /* border: 1px solid red; */
+    }
+    .pagination {
+      width: 950px;
+      height: 60px;
+      /* border: 1px solid red; */
+      margin: 20px auto;
+    }
+    .text {
+      font-size: 12px;
+      margin-top: 5px;
+      float: left;
     }
 </style>
