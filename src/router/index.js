@@ -5,6 +5,7 @@ import Index from "../views/Index.vue"
 import View from "../views/View.vue"
 import User from "../views/User.vue"
 import Teacher from "../views/Teacher.vue"
+import Register from "../views/Register.vue"
 import StudentTable from "../components/StudentTable.vue"
 import CourseTable from "../components/CourseTable.vue"
 Vue.use(VueRouter)
@@ -44,6 +45,11 @@ const routes = [
         component: CourseTable
       },
     ]
+  }, 
+  {
+    path: "/register",
+    name: "register",
+    component: Register
   }
 ]
 

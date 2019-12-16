@@ -1,5 +1,17 @@
 <template>
   <div class="video">
+      <div class="select">
+          <el-dropdown split-button type="primary" @click="handleClick">
+            二极管电路分析方法
+            <el-dropdown-menu slot="dropdown">
+                <el-dropdown-item>二极管电路分析方法</el-dropdown-item>
+                <el-dropdown-item>二极管电路分析方法</el-dropdown-item>
+                <el-dropdown-item>二极管电路分析方法</el-dropdown-item>
+                <el-dropdown-item>二极管电路分析方法</el-dropdown-item>
+                <el-dropdown-item>二极管电路分析方法</el-dropdown-item>
+            </el-dropdown-menu>
+        </el-dropdown>
+      </div>
     <div class="img">
         <img :src="url" alt="" height="500px" width="700px">
     </div>
@@ -32,7 +44,7 @@
       </div>
       
        <div class="right">
-            <el-button type="primary">下一节</el-button>
+            <el-button type="primary">群组讨论</el-button>
        </div>
         
   </div>
@@ -55,11 +67,27 @@ export default {
 </script>
 
 <style scoped>  
+    .el-dropdown {
+        vertical-align: top;
+    }
+    .el-dropdown + .el-dropdown {
+        margin-left: 15px;
+    }
+    .el-icon-arrow-down {
+        font-size: 12px;
+    }
+    .select {
+        width: 350px;
+        height: 40px;
+        /* border: 1px solid red; */
+        margin-left: 480px;
+
+    }
     .img {
         width: 800px;
         height: 400px;
         float: left;
-        margin-top: 50px;
+        margin-top: 20px;
         /* border: 1px solid red; */
 
     }
@@ -86,7 +114,7 @@ export default {
         float: left;
         width: 400px;
         height: 50px;
-        margin-top: 30px;
+        /* margin-top: 10px; */
     }
     .left {
         float: left;

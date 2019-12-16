@@ -4,17 +4,18 @@
         <div class="img_name">
             <el-avatar :size=80 src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"></el-avatar>
 
-            <div class="name">
+            <!-- <div class="name">
                 xhy
-            </div>
+            </div> -->
         </div>
         <div class="divider">
             <div class="text_divider">个人信息中心</div>
             <el-divider class="img_divider"></el-divider>
         </div>
-
+        
         <div class="person_info">个人信息</div>
-        <div class="history">观看历史</div>
+        <div class="history">课程选择记录</div>
+        <div class="group">所在学习群组</div>
     </div>
 
     <div class="right_info">
@@ -25,11 +26,11 @@
         </div>
 
         <div class="info_div">
-            <div align="left" class="user_name">用户名：xhy</div>
-            <div align="left" class="user_name">邮箱： XXX@163.com</div>
-            <div align="left" class="user_name">手机号： 1880116XXXX</div>
-            <div align="left" class="user_name">城市： 济南</div>
-            <div align="left" class="user_name">职位： 学生</div>
+            <div align="left" class="user_name">用户id：130149644</div>
+            <div align="left" class="user_name">性别： 女</div>
+            <div align="left" class="user_name">国家： 中国</div>
+            <div align="left" class="user_name">学历： 本科</div>
+            <!-- <div align="left" class="user_name">职位： 学生</div> -->
         </div>
     </div>
 
@@ -86,6 +87,10 @@ export default {
         margin-top: 60px;
     }
     .history {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .group {
         font-size: 30px;
         margin-top: 40px;
     }

@@ -14,7 +14,7 @@
 
     <el-table-column
       label="课程名"
-      width="160">
+      width="200">
       <template slot-scope="scope">
         <el-popover trigger="hover" placement="top">
           <p>姓名: {{ scope.row.name }}</p>
@@ -26,10 +26,10 @@
       </template>
     </el-table-column>
 
-     <el-table-column
+     <!-- <el-table-column
       label="课程交互次数"
-      width="160">
-      <template slot-scope="scope">
+      width="160"> -->
+      <!-- <template slot-scope="scope">
         <span style="margin-left: 10px">{{ scope.row.gender }}</span>
       </template>
     </el-table-column>
@@ -49,8 +49,8 @@
       <template slot-scope="scope">
        
         <span style="margin-left: 10px">{{ scope.row.chapter }}</span>
-      </template>
-    </el-table-column>
+      </template> -->
+    <!-- </el-table-column> -->
 
     <el-table-column label="操作">
       <template slot-scope="scope">
@@ -78,33 +78,55 @@ export default {
     return {
         tableData: [{
           date: '02',
-          name: '电路技术',
+          name: '计算机科学导论',
           address: '上海市普陀区金沙江路 1518 弄',
           gender: "109",
-          user: "101511010",
+          user: "CS50x",
           chapter: "12"
         }, {
           date: '06',
-          name: 'c++程序设计基础',
+          name: '力学回顾',
           address: '上海市普陀区金沙江路 1517 弄',
-          user: "101511030",
+          user: "8.MReV",
           gender: "97",
           chapter: "10"
         }, {
           date: '12',
-          name: '计算机科学概论',
+          name: '生物学导论-生命的意义',
           address: '上海市普陀区金沙江路 1519 弄',
-          user: "101511012",
+          user: "7.00x",
           gender: "33",
           chapter: "8"
         }, {
           date: '03',
-          name: '电与磁',
+          name: '计算机编程导论',
           address: '上海市普陀区金沙江路 1516 弄',
-          user: "101511011",
+          user: "6.00x",
           gender: "209",
           chapter: "15"
-        }]
+        }, {
+          date: '03',
+          name: '结构原件',
+          address: '上海市普陀区金沙江路 1516 弄',
+          user: "2.01x",
+          gender: "209",
+          chapter: "15"
+        }, {
+          date: '03',
+          name: '正义',
+          address: '上海市普陀区金沙江路 1516 弄',
+          user: "ER22x",
+          gender: "209",
+          chapter: "15"
+        }, {
+          date: '03',
+          name: '固态化学导论',
+          address: '上海市普陀区金沙江路 1516 弄',
+          user: "3.091x",
+          gender: "209",
+          chapter: "15"
+        }
+        ]
     }
   }, 
   methods: {
@@ -120,11 +142,11 @@ export default {
 
 <style scoped>
     .course {
-        width: 1000px;
+        width: 600px;
         height: 500px;
         position: absolute;
         top: 150px;
-        left: 460px;
+        left: 600px;
         /* border: 1px solid red; */
     }
 </style>

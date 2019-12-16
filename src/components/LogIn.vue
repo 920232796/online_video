@@ -16,9 +16,11 @@
             <div class="input-password">
                 <el-input v-model="inputPassword" placeholder="请输入密码" size="medium"></el-input>
             </div>
+            <div class="forget">忘了密码?</div>
         </div>
 
         <el-row class="logBtn">
+            <el-button class="btn" type="primary">注册</el-button>
             <el-button class="btn" type="primary">登陆</el-button>
         </el-row>
 
@@ -68,7 +70,7 @@
     }
     .wrapper-user {
         /*border: 1px solid blue;*/
-        width: 350px;
+        width: 390px;
         height: 50px;
         margin: 0 auto;
         padding-top: 15%;
@@ -95,7 +97,7 @@
 
     .wrapper-password {
         /*border: 1px solid blue;*/
-        width: 350px;
+        width: 390px;
         height: 50px;
         padding-top: 1.5%;
         margin: 0 auto;
@@ -114,16 +116,21 @@
         float: left;
         width: 250px;
     }
+    .forget {
+        font-size: 13px;
+        margin-top: 10px;
+    }
 
 
     .logBtn {
-        width:250px;
-        margin: 0 auto;
+        width:550px;
+        margin-left: 530px;
         padding-top: 2%;
         padding-left: 0px;
     }
     .btn {
-        width: 250px;
+        width: 110px;
+        margin-left: 5px;
     }
     .error{
       width: 130px;

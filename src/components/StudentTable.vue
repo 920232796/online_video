@@ -5,14 +5,14 @@
     :data="tableData"
     style="width: 100%">
     <el-table-column
-      label="用户名"
+      label="用户id"
       width="180">
       <template slot-scope="scope">
         <span style="margin-left: 10px">{{ scope.row.user }}</span>
       </template>
     </el-table-column>
 
-    <el-table-column
+    <!-- <el-table-column
       label="姓名"
       width="180">
       <template slot-scope="scope">
@@ -24,7 +24,7 @@
           </div>
         </el-popover>
       </template>
-    </el-table-column>
+    </el-table-column> -->
 
      <el-table-column
       label="性别"
@@ -35,7 +35,7 @@
     </el-table-column>
 
      <el-table-column
-      label="出生日期"
+      label="学历"
       width="180">
       <template slot-scope="scope">
         <i class="el-icon-time"></i>
@@ -68,30 +68,63 @@ export default {
   data () {
     return {
         tableData: [{
-          date: '1996-05-02',
+          date: '本科',
           name: '小虎',
           address: '上海市普陀区金沙江路 1518 弄',
           gender: "男",
           user: "201511010"
         }, {
-          date: '1996-07-06',
+          date: '本科',
           name: '小王',
           address: '上海市普陀区金沙江路 1517 弄',
           user: "201511030",
           gender: "男",
         }, {
-          date: '1996-02-12',
+          date: '本科',
           name: '小李',
           address: '上海市普陀区金沙江路 1519 弄',
           user: "201511012",
           gender: "女",
         }, {
-          date: '1997-10-03',
+          date: '硕士',
           name: '小张',
           address: '上海市普陀区金沙江路 1516 弄',
           user: "201511011",
           gender: "男",
-        }]
+        }, {
+          date: '本科',
+          name: '小张',
+          address: '上海市普陀区金沙江路 1516 弄',
+          user: "201511011",
+          gender: "男",
+        }, {
+          date: '硕士',
+          name: '小张',
+          address: '上海市普陀区金沙江路 1516 弄',
+          user: "201511011",
+          gender: "男",
+        }, {
+          date: '专科',
+          name: '小张',
+          address: '上海市普陀区金沙江路 1516 弄',
+          user: "201511011",
+          gender: "男",
+        }, {
+          date: '硕士',
+          name: '小张',
+          address: '上海市普陀区金沙江路 1516 弄',
+          user: "201511011",
+          gender: "男",
+        }, {
+          date: '专科',
+          name: '小张',
+          address: '上海市普陀区金沙江路 1516 弄',
+          user: "201511011",
+          gender: "男",
+        },
+        
+        
+        ]
     }
   }, 
   methods: {
