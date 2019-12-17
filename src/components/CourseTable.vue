@@ -1,6 +1,8 @@
 <template>
   <div class="course">
-
+    <div class="add_course">
+       <el-button type="success">添加课程</el-button>
+    </div>
      <el-table
     :data="tableData"
     style="width: 100%">
@@ -150,6 +152,8 @@ export default {
 </script>
 
 <style scoped>
+
+    
     .course {
         width: 600px;
         height: 500px;
@@ -168,5 +172,12 @@ export default {
       font-size: 12px;
       margin-top: 5px;
       float: left;
+    }
+    .add_course {
+      position: absolute;
+      width: 150px;
+      height: 50px;
+      left: 600px;
+      top:10px;
     }
 </style>

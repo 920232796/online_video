@@ -3,6 +3,7 @@
       <ManagerId/>
       <ManageNavi class="manage_navi"/>
       <Search/>
+      
   </div>
 </template>
 
@@ -35,4 +36,5 @@ export default {
     .manage_navi {
         float: left;
     }
+    
 </style>
